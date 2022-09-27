@@ -102,10 +102,7 @@ INSERT INTO storageunit VALUES
 
 # code used to setup db
 
-# test_connection = create_server_connection("localhost", "root", "megan123")
-# create_closet_query = "CREATE DATABASE closet"
-# create_database(test_connection, create_closet_query)
-connection = create_db_connection("localhost", "root", "megan123", "closet")
+connection = create_db_connection("localhost", "root", "PASSWORD", "closet")
 execute_query(connection, drop_clothing_table)
 execute_query(connection, drop_storage_unit_table)
 execute_query(connection, create_storage_unit_table)
